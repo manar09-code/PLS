@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLS Rescue Organization</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background-color:#1a1a1a;
+      color: #333;
+    }
+
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    .intro-content {
+      flex: 1;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .intro-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #f9c800;
+    }
+
+    .intro-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #f9c800;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #333;
+      color: #f9c800;
+    }
+
+    .intro-image {
+      flex: 1;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .intro-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .intro-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-content,
+      .intro-image {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      .cta-buttons {
+        justify-content: center;
+      }
+    }
+    .home-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f9c800;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #333;
+  color: #f9c800;
+}
+
+
+.bottom-button {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <section class="intro-section">
+    <!-- Introduction Content -->
+    <div class="intro-content">
+      <h1>PLS Rescue Organization</h1>
+      <p>
+        Dedicated to bringing hope and relief to children and families in Palestine, Lebanon, and Syria, 
+        we provide vital support including food, shelter, medical care, and education. 
+        Our mission is to empower the most vulnerable and create lasting change in the face of conflict and adversity.
+      </p>
+      <p>
+        Together, we can make a difference. Join us in rebuilding lives and ensuring a brighter future for those in need.
+      </p>
+      <div class="cta-buttons">
+        <a href="about.html">Learn More</a>
+        <a href="help.html">Donate Now</a>
+      </div>
+    </div>
+
+    <!-- Introduction Image -->
+    <div class="intro-image">
+      <img src="https://images.pexels.com/photos/6994982/pexels-photo-6994982.jpeg?auto=compress&cs=tinysrgb&w=600"
+       alt="PLS Rescue">
+    </div>
+  </section>
+  <a href="index.html" class="home-button bottom-button">Home</a>
+
+</body>
+</html>

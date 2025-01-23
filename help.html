@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLS Rescue - Log In & Donate</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f9c800;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+/* Form Section */
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 600px;
+  margin: 30px auto;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #f9c800;
+  outline: none;
+}
+
+button {
+  background-color: #f9c800;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Donation Section */
+.donation-section {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+.donation-amounts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.donation-amounts button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #f9c800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donation-amounts button:hover {
+  background-color: #333;
+  color: #f9c800;
+}
+
+.custom-amount {
+  margin-top: 20px;
+}
+
+.custom-amount input {
+  width: 50%;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  animation: fadeIn 2s ease-out;  /* Apply fade-in animation */
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.home-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f9c800;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #333;
+  color: #f9c800;
+}
+
+.bottom-button {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>PLS Rescue Organization</h1>
+    <h2>Log In & Donate to Make a Difference</h2>
+
+    <!-- Login Form -->
+    <div class="form-container">
+      <h3>Log In</h3>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+
+    <!-- Donation Form -->
+    <div class="form-container">
+      <h3>Donate Now</h3>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="">Select Your Country</option>
+            <option value="palestine">Palestine</option>
+            <option value="lebanon">Lebanon</option>
+            <option value="syria">Syria</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Donation Options -->
+        <div class="donation-section">
+          <h4>Choose a Donation Amount</h4>
+          <div class="donation-amounts">
+            <button type="button" onclick="setAmount(10)">$10</button>
+            <button type="button" onclick="setAmount(25)">$25</button>
+            <button type="button" onclick="setAmount(50)">$50</button>
+            <button type="button" onclick="setAmount(100)">$100</button>
+          </div>
+          <div class="custom-amount">
+            <label for="amount">Or Enter Custom Amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount in USD" required>
+          </div>
+        </div>
+        <button type="submit">Donate Now</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PLS Rescue Organization. All Rights Reserved.</p>
+    <p>Together, we can make a difference.</p>
+  </footer>
+
+  <script>
+    function setAmount(value) {
+      document.getElementById('amount').value = value;
+    }
+  </script>
+  <a href="index.html" class="home-button bottom-button">Home</a>
+
+</body>
+</html>
