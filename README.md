@@ -15,7 +15,7 @@ Technologies Used
 🎨 CSS: To design a consistent and visually appealing user interface.
 💻 JavaScript: Used in the donation page for an interactive formula to calculate donation amounts.
 🌐 Live Demo
-Experience the website live: View the Demo www.PLS Rescue Organization.com
+Experience the website live: View the Demo www.PLSRescueOrganization.com
 
 📊 Project Presentation
 A project presentation is included to showcase the design and functionality of the website.
