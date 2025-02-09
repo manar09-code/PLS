@@ -16,7 +16,7 @@ body {
 /* Social Icons Styling */
 .social-icons {
   position: fixed;
-  top: 20px; /* Adjust this value if you need more spacing from the top */
+  top: 20px; 
   right: 20px; /* Align the icons to the right */
   display: flex;
   gap: 20px;
@@ -233,7 +233,7 @@ body {
 }
 
 .footer-social-icons a:hover {
-  color: #f9c800; /* Change to your preferred hover color */
+  color: #f9c800; 
 }
 
 
